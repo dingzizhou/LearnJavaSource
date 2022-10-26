@@ -1,11 +1,9 @@
-package org.example.test.ArrayList;
+package org.example.test.utils.ArrayList;
 
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-
 public class test {
     /**
      * 初始化和添加函数测试
