@@ -1,4 +1,4 @@
-package org.example.test.utils.HashMap;
+package org.example.dataStructure;
 
 import lombok.Data;
 

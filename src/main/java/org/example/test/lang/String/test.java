@@ -19,5 +19,19 @@ public class test {
         System.out.println(str);
 
     }
+    @Test
+    public void test_append(){
+        String[] arr = {"he", "llo", "world"};
+        String s = "";
+        for (int i = 0; i < arr.length; i++) {
+            s += arr[i];
+        }
+        System.out.println(s);
+        StringBuilder s1 = new StringBuilder();
+        for (String value : arr) {
+            s1.append(value);
+        }
+        System.out.println(s1);
+    }
 
 }

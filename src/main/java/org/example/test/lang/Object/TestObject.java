@@ -85,9 +85,9 @@ class bigClass_deep implements Cloneable{
 }
 
 
-public class test {
+public class TestObject {
     @Test
-    public void test1() throws CloneNotSupportedException {
+    public void test_clone() throws CloneNotSupportedException {
         minClass minClass1 = new minClass("minClass");
         bigClass bigClass1 = new bigClass("bigClass",minClass1);
         bigClass bigClass2 = (bigClass) bigClass1.clone();
@@ -102,8 +102,15 @@ public class test {
     }
 
     @Test
-    public void test2(){
-        Object minClass = new minClass("11");
-        System.out.println(minClass.toString());
+    public void test_Equal(){
+        String a = new String("ab");
+        String b = new String("ab");
+        String aa = "ab";
+        String bb = "ab";
+        System.out.println(aa == bb);// true
+        System.out.println(a == b);// false
+        System.out.println(a.equals(b));// true
+        System.out.println(aa.equals(bb));// true
+        System.out.println(42 == 42.0);// true
     }
 }
